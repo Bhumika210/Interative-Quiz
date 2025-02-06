@@ -1,0 +1,152 @@
+body {
+    background-color: beige;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.title {
+    color: #3f006f;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 16%;
+    margin-bottom: 0.5%;
+    padding: 0%;
+}
+
+.subTitle {
+    color: #9955BB;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 0% 0% 3% 0%;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    margin:0% 6% 3.5% 6%;
+    background-color: #D8BFD8;
+    color: rgb(41, 40, 40);
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+}
+
+.question {
+    margin: 0%;
+    margin-bottom: 20px;
+    padding: 0%;
+}
+
+.options {
+    border-style: none;
+    height: auto;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 550;
+    border-radius: 15px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.options:hover {
+    background-color: rgb(157, 108, 214);
+    color: white;
+}
+
+.nextBtn {
+    margin-top: 18px;
+    border-style: none;
+    padding: 6px 20px;
+    background-color: #3f006f;
+    color: white;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.nextBtn:hover {
+    background-color: #2e0051;
+    transform: scale(1.1);
+}
+
+.scoreBoard {
+    text-align: center;
+    font-size: 23px;
+    padding: 5px 15px;
+    background-color: #3f006f;
+    color: white;
+    border-radius: 14px;
+    font-weight: 500;
+}
+
+#score {
+    margin-left: 5px;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) 
+{
+    .title {
+        margin-top: 33%;
+    }
+
+    .subTitle {
+        margin-bottom: 6%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 600px) {
+    .title {
+        margin-top: 33%;
+    }
+
+    .subTitle {
+        margin-bottom: 6%;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+        margin-top: 45%;
+    }
+
+    .subTitle {
+        font-size: 1rem;
+        margin-bottom: 8%;
+    }
+
+    .container{
+        margin: 0px 40px 20px 40px;
+    }
+
+    .question {
+        font-size: 1rem;
+    }
+
+    .options {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .nextBtn {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    .scoreBoard {
+        font-size: 0.9rem;
+    }
+}
